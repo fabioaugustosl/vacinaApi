@@ -1,8 +1,7 @@
 var mongoose = require('mongoose'), Schema = mongoose.Schema;
 
 var vacinacaoModel = new Schema({
-	idPessoa: {type:String},
-	nomePessoa: {type:String},
+	idCartao: {type:String},
 	imagem: {type:String},
 	nome: {type: String},
 	descricao: {type: String},

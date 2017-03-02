@@ -34,9 +34,11 @@ app.set('views','./src/views');
 
 var eventoRouter = require('./src/routes/EventoRoutes');
 var vacinacaoRouter = require('./src/routes/VacinacaoRoutes');
+var cartaoRouter = require('./src/routes/CartaoRoutes');
 
 app.use('/api/evento/v1', eventoRouter);
 app.use('/api/vacinacao/v1', vacinacaoRouter);
+app.use('/api/cartao/v1', cartaoRouter);
 
 
 app.get('/', function(req, res){

@@ -10,8 +10,8 @@ var vacinacaoController = function(vacinacaoModel){
 		
 		console.log(vacinacao);
 		var msgObrigatorio = '';
-		if(!req.body.idPessoa) {
-			msgObrigatorio+= 'Pessoa é obrigatório.<br/>';
+		if(!req.body.idCartao) {
+			msgObrigatorio+= 'Cartão é obrigatório.<br/>';
 		}
 		if(!req.body.nome) {
 			msgObrigatorio+= 'Nome da vacina é obrigatório.<br/>';
@@ -34,8 +34,6 @@ var vacinacaoController = function(vacinacaoModel){
 		var vacinacao = req.vacinacao; // new vacinacaoModel(req.body);
 		console.log(vacinacao);
 
-		vacinacao.idPessoa = req.body.idPessoa;
-		vacinacao.nomePessoa = req.body.nomePessoa;
 		vacinacao.imagem = req.body.imagem;
 		vacinacao.nome = req.body.nome;
 		vacinacao.descricao = req.body.descricao;
